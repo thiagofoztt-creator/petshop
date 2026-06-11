@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Banho e Tosa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- HEADER COM LOGO -->
+<header class="site-header" style="height: 40vh;">
+    <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="Bichano's Pet Shop Araucária"
+        class="logo-img"
+    >
+
+    <!-- MENU ABAIXO DA LOGO -->
+    <nav class="menu-bottom">
+        <a href="/">Início</a>
+        <a href="/loja">Loja</a>
+        <a href="/banho-tosa" class="ativo">Banho e Tosa</a>
+        <a href="/contato">Contato</a>
+    </nav>
+</header>
+{% extends "base.html" %}
+
+{% block conteudo %}
+<h2>Banho e Tosa</h2>
+
+<form class="formulario">
+    <input type="text" placeholder="Nome do tutor">
+    <input type="text" placeholder="Nome do pet">
+    <input type="date">
+    <input type="time">
+    <button>Agendar</button>
+</form>
+{% endblock %}
+<!-- CONTEÚDO -->
+<main class="page-container">
+
+    <h1>Agendamento de Banho e Tosa</h1>
+
+    <form method="POST">
+
+        <input type="text" name="nome_tutor" placeholder="Nome do tutor" required>
+        <input type="text" name="nome_pet" placeholder="Nome do pet" required>
+
+        <select name="servico" required>
+            <option value="">Selecione o serviço</option>
+            <option value="Banho">Banho</option>
+            <option value="Tosa">Tosa</option>
+            <option value="Banho + Tosa">Banho + Tosa</option>
+        </select>
+
+        <input type="date" name="data" required>
+        <input type="time" name="hora" required>
+
+        <button type="submit" class="botao">
+            Confirmar Agendamento
+        </button>
+
+    </form>
+
+</main>
+
+</body>
+</html>

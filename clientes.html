@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block conteudo %}
+
+<section class="section">
+
+    <h2>👥 Clientes</h2>
+
+    {% if clientes %}
+        <div class="cards">
+            {% for c in clientes %}
+                <div class="card">
+                    <strong>👤 {{ c.nome }}</strong><br>
+
+                    📞 {{ c.telefone }}<br>
+
+                    <small>
+                        📅 Cadastro:
+                        {{ c.criado_em.strftime('%d/%m/%Y') if c.criado_em else '—' }}
+                    </small>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Nenhum cliente cadastrado.</p>
+    {% endif %}
+
+</section>
+
+{% endblock %}

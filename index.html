@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="centro">
+
+        <h1>
+            Bichano's Pet Shop Araucária
+        </h1>
+
+        <h2>
+            Amor, cuidado e carinho que você confia ❤️
+        </h2>
+
+        <p>
+            Banho • Tosa • Produtos para seu pet
+        </p>
+
+        <div class="acoes-linha">
+
+            <a
+                href="/banho-tosa"
+                class="botao"
+            >
+                Agendar Banho & Tosa
+            </a>
+
+            <a
+                href="/loja"
+                class="botao secundario"
+            >
+                Ver Produtos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="section">
+
+    <h2>
+        🐶 Por que escolher a gente?
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🐾 Atendimento com carinho</h3>
+
+            <p>
+                Cuidamos do seu pet com atenção,
+                amor e dedicação.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✂️ Tosa profissional</h3>
+
+            <p>
+                Equipe especializada para deixar
+                seu pet ainda mais bonito.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Amor no que faz</h3>
+
+            <p>
+                Trabalhamos com paixão e respeito
+                pelos animais.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💬 Atendimento via WhatsApp</h3>
+
+            <p>
+                Atendimento rápido e fácil direto
+                pelo WhatsApp.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+
+    <div class="hero-texto">
+
+        <h2>
+            Seu pet merece o melhor ❤️
+        </h2>
+
+        <p>
+            Banho e tosa profissional +
+            produtos selecionados
+        </p>
+
+        <div class="acoes-linha">
+
+            <a
+                href="/banho-tosa"
+                class="botao"
+            >
+                Agendar Agora
+            </a>
+
+            <a
+                href="/loja"
+                class="botao secundario"
+            >
+                Comprar Produtos
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERIA -->
+<section class="section">
+
+    <h2>
+        Clientes felizes 🐶🐱
+    </h2>
+
+    <div class="galeria-pets">
+
+        <img
+            src="{{ url_for('static', filename='images/pets/dog1.jpg') }}"
+            alt="Cachorro feliz"
+        >
+
+        <img
+            src="{{ url_for('static', filename='images/pets/dog2.jpg') }}"
+            alt="Cachorro feliz"
+        >
+
+        <img
+            src="{{ url_for('static', filename='images/pets/cat1.jpg') }}"
+            alt="Gato feliz"
+        >
+
+        <img
+            src="{{ url_for('static', filename='images/pets/pet1.jpg') }}"
+            alt="Pet feliz"
+        >
+
+        <img
+            src="{{ url_for('static', filename='images/pets/pet2.jpg') }}"
+            alt="Pet feliz"
+        >
+
+    </div>
+
+</section>
+
+{% endblock %}

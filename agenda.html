@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block conteudo %}
+
+<h2>📅 Agenda de Banho e Tosa</h2>
+
+{% if agendamentos %}
+<ul>
+    {% for a in agendamentos %}
+    <li>
+        {{ a["data"] }} {{ a["hora"] }} —
+        {{ a["nome_pet"] }} ({{ a["servico"] }}) —
+        Tutor: {{ a["nome_tutor"] }}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Nenhum agendamento ainda.</p>
+{% endif %}
+
+{% endblock %}

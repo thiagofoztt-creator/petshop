@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Bichano's Pet Shop Araucária</title>
+
+    <meta
+        name="description"
+        content="Bichano's Pet Shop Araucária - Banho, tosa e produtos para seu pet em Araucária PR."
+    >
+
+    <meta
+        name="keywords"
+        content="petshop, banho e tosa, ração, Araucária, pet"
+    >
+
+    <meta
+        name="author"
+        content="Bichano's Pet Shop Araucária"
+    >
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="icon"
+        href="{{ url_for('static', filename='images/favicon.ico') }}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<header class="topo">
+
+    <div class="site-header">
+
+        <img
+            src="{{ url_for('static', filename='images/logo.png') }}"
+            alt="Bichano's Pet Shop Araucária"
+            class="logo-img"
+        >
+
+        <nav class="menu-bottom">
+
+            <a
+                href="/"
+                class="{% if request.path == '/' %}ativo{% endif %}"
+            >
+                Início
+            </a>
+
+            <a
+                href="/loja"
+                class="{% if request.path == '/loja' %}ativo{% endif %}"
+            >
+                Loja
+            </a>
+
+            <a
+                href="/banho-tosa"
+                class="{% if request.path == '/banho-tosa' %}ativo{% endif %}"
+            >
+                Banho e Tosa
+            </a>
+
+            <a
+                href="/contato"
+                class="{% if request.path == '/contato' %}ativo{% endif %}"
+            >
+                Contato
+            </a>
+
+            <a
+                href="/carrinho"
+                class="{% if request.path == '/carrinho' %}ativo{% endif %}"
+            >
+                Carrinho
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="page-container flip">
+    {% block conteudo %}
+    {% endblock %}
+</main>
+
+<footer class="rodape">
+
+    <p>
+        🐶 Bichano's Pet Shop Araucária
+    </p>
+
+    <p>
+        📞 (41) 99830-9920
+    </p>
+
+    <p>
+        📍 Araucária - PR
+    </p>
+
+    <p>
+        © 2026 Todos os direitos reservados
+    </p>
+
+</footer>
+
+</body>
+</html>
