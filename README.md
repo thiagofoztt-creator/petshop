@@ -4,51 +4,47 @@ Sistema web completo para gerenciamento de Pet Shop desenvolvido com Python e Fl
 
 O projeto simula uma operação real de pet shop, incluindo catálogo de produtos, agendamento de serviços, gerenciamento de clientes, carrinho de compras e pagamento via Pix.
 
----
+##  Funcionalidades
 
-## 🚀 Funcionalidades
-
-### 🛒 Loja Virtual
+###  Loja Virtual
 
 * Catálogo de produtos
 * Carrinho de compras
 * Controle de pedidos
 * Exibição dinâmica de preços
 
-### 📅 Agendamento
+###  Agendamento
 
 * Agendamento de banho e tosa
 * Registro de solicitações
 * Interface intuitiva para clientes
 
-### 👥 Gestão de Clientes
+###  Gestão de Clientes
 
 * Cadastro de clientes
 * Consulta de informações
 * Organização de dados
 
-### 💳 Pagamentos
+###  Pagamentos
 
 * Integração com Pix
 * Geração de QR Code
 * Fluxo de compra simplificado
 
-### 📱 Comunicação
+###  Comunicação
 
 * Integração com WhatsApp
 * Atendimento facilitado
 
-### 🖼️ Processamento de Imagens
+###  Processamento de Imagens
 
 * Geração automática de imagens de produtos
 * Inserção dinâmica de preços
 * Manipulação de imagens utilizando Pillow
 
----
+##  Arquitetura
 
-## 🏗️ Arquitetura
-
-```text
+text
 Cliente
    ↓
 Frontend (HTML/CSS)
@@ -58,11 +54,8 @@ Flask
 SQLite
    ↓
 Produtos | Clientes | Pedidos
-```
 
----
-
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 ### Backend
 
@@ -88,9 +81,7 @@ Produtos | Clientes | Pedidos
 * GitHub
 * VS Code
 
----
-
-## 🔒 Recursos de Segurança
+##  Recursos de Segurança
 
 O projeto implementa boas práticas de segurança:
 
@@ -100,11 +91,9 @@ O projeto implementa boas práticas de segurança:
 * Tratamento de exceções
 * Validação de dados recebidos
 
----
+##  Estrutura do Projeto
 
-## 📂 Estrutura do Projeto
-
-```text
+text
 petshop/
 │
 ├── app.py
@@ -122,45 +111,33 @@ petshop/
 │   └── images/
 │
 └── README.md
-```
 
----
-
-## ⚙️ Instalação
+##  Instalação
 
 Clone o projeto:
 
-```bash
+bash
 git clone https://github.com/thiagofoztt-creator/petshop.git
-```
 
 Entre na pasta:
-
-```bash
+bash
 cd petshop
-```
 
 Instale as dependências:
 
-```bash
+bash
 pip install -r requirements.txt
-```
 
 Configure as variáveis de ambiente:
 
-```env
+env
 SECRET_KEY=sua_chave_secreta
-```
 
 Execute:
-
-```bash
+bash
 python app.py
-```
 
----
-
-## 🎯 Conceitos Aplicados
+##  Conceitos Aplicados
 
 * Desenvolvimento Backend
 * Arquitetura MVC
@@ -171,9 +148,7 @@ python app.py
 * Integração de Serviços
 * Desenvolvimento Full Stack
 
----
-
-## 📈 Próximas Melhorias
+##  Próximas Melhorias
 
 * Sistema de autenticação
 * Painel administrativo
@@ -182,21 +157,19 @@ python app.py
 * API REST
 * Relatórios gerenciais
 
----
-
-## 👨‍💻 Autor
+##  Autor
 
 Thiago de Almeida Teles
 
-🎓 Ciência da Computação
+ Ciência da Computação
 
-📧 [thiagofoztt@gmail.com](mailto:thiagofoztt@gmail.com)
+ [thiagofoztt@gmail.com](mailto:thiagofoztt@gmail.com)
 
-🐙 GitHub:
+ GitHub:
 https://github.com/thiagofoztt-creator
 
-🌐 Portfólio:
+ Portfólio:
 https://thiagofoztt-creator.github.io/portfolio/
 
-💼 LinkedIn:
+ LinkedIn:
 https://linkedin.com/in/thiago-de-almeida-teles
